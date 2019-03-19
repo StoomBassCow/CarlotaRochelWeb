@@ -9,7 +9,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-  <title>Carlota rochel | Starter</title>
+  <title>Carlota rochel</title>
 
 <link rel="stylesheet" href="/css/app.css">
 
@@ -24,27 +24,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <li class="nav-item">
         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fa fa-bars"></i></a>
       </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
-      </li>
-      <li class="nav-item d-none d-sm-inline-block">
-        <a href="#" class="nav-link">Contact</a>
-      </li>
     </ul>
 
-    <!-- SEARCH FORM -->
-    <form class="form-inline ml-3">
-      <div class="input-group input-group-sm">
-        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-        <div class="input-group-append">
-          <button class="btn btn-navbar" type="submit">
-            <i class="fa fa-search"></i>
-          </button>
-        </div>
-      </div>
-    </form>
-
-    <!-- Right navbar links -->
+ 
    
   </nav>
   <!-- /.navbar -->
@@ -52,7 +34,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="/home" class="brand-link">
       <img src="{{URL::asset('./img/CarlotaRochelLogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">Carlota Rochel</span>
@@ -66,78 +48,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!--img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image"-->
         </div>
         <div class="info">
-          <a href="#" class="d-block">Name In BD</a>
+
+          <a href="#" class="d-block">Empleado: </a>
+
         </div>
       </div>
+
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
     
 
-        <!--Inventarios-->
+        <!--Catálogos-->
 
 <li class="nav-item has-treeview">
 
     <a href="#" class="nav-link">
       <img src="{{URL::asset('./img/icons/023-pallet.png')}}" style="width: 30px; height: 30px; " alt="">
-        <i class="nav-icon fa fa-pie-chart"></i>
-        <p>
-            Inventarios
-            <i class="right fa fa-angle-left"></i>
-        </p>
-    </a>
-    <ul class="nav nav-treeview">
-        <li class="nav-item">
-            <a href="pages/charts/chartjs.html" class="nav-link">
-                <i class="fa fa-circle-o nav-icon"></i>
-                <p>---</p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="pages/charts/flot.html" class="nav-link">
-                <i class="fa fa-circle-o nav-icon"></i>
-                <p>---</p>
-            </a>
-        </li>
-        <li class="nav-item">
-            <a href="pages/charts/inline.html" class="nav-link">
-                <i class="fa fa-circle-o nav-icon"></i>
-                <p>---</p>
-            </a>
-        </li>
-    </ul>
-</li>
-
-<!--Inventarios en aparador-->
-
-<li class="nav-item has-treeview">
-    <a href="#" class="nav-link">
-       <img src="{{URL::asset('./img/icons/019-supermarket.png')}}" style="width: 30px; height: 30px; " alt="">
-        <i class="nav-icon fa fa-pie-chart"></i>
-        <p>
-            Inventarios en aparador
-        </p>
-    </a>
-</li>
-
-<!--Inventario en bodega-->
-
-<li class="nav-item has-treeview">
-    <a href="#" class="nav-link">
-       <img src="{{URL::asset('./img/icons/022-trolley.png')}}" style="width: 30px; height: 30px; " alt="">
-        <i class="nav-icon fa fa-pie-chart"></i>
-        <p>
-            Inventarios en bodega
-        </p>
-    </a>
-</li>
-
-<!--Catalogos-->
-
-<li class="nav-item has-treeview">
-    <a href="#" class="nav-link">
-       <img src="{{URL::asset('./img/icons/013-ecommerce-1.png')}}" style="width: 30px; height: 30px; " alt="">
         <i class="nav-icon fa fa-pie-chart"></i>
         <p>
             Catálogos
@@ -146,89 +74,127 @@ scratch. This page gets rid of all links and provides the needed markup only.
     </a>
     <ul class="nav nav-treeview">
         <li class="nav-item">
-            <a href="pages/charts/chartjs.html" class="nav-link">
+            <a href="products" class="nav-link">
                 <i class="fa fa-circle-o nav-icon"></i>
-                <p>---</p>
+                <p>Productos</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="pages/charts/flot.html" class="nav-link">
+            <a href="/clients" class="nav-link">
                 <i class="fa fa-circle-o nav-icon"></i>
-                <p>---</p>
+                <p>Clientes</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="pages/charts/inline.html" class="nav-link">
+            <a href="/kindOfProducts" class="nav-link">
                 <i class="fa fa-circle-o nav-icon"></i>
-                <p>---</p>
+                <p>Tipos de productos</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="origin" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>Paises de origen</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="providers" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>Proveedores</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="users" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>Usuarios</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="userRoles" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>Roles de usuario</p>
             </a>
         </li>
     </ul>
 </li>
-<!--Productos-->
+<!--PRocesos administrativos-->
 
 <li class="nav-item has-treeview">
     <a href="#" class="nav-link">
-       <img src="{{URL::asset('./img/icons/011-eshop.png')}}" style="width: 30px; height: 30px; " alt="">
+       <img src="{{URL::asset('./img/icons/013-ecommerce-1.png')}}" style="width: 30px; height: 30px; " alt="">
         <i class="nav-icon fa fa-pie-chart"></i>
         <p>
-            Productos
+            Procesos administrativos
+            <i class="right fa fa-angle-left"></i>
         </p>
     </a>
+    <ul class="nav nav-treeview">
+        <li class="nav-item">
+            <a href="salesDetail" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>Detalle de ventas</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="productsMovements" class="nav-link">
+                <i class="fa  nav-icon"></i>
+                <p>Movimientos de producto</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="cashMovements" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>Movimientos de efectivo</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="boxCut" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>Corte de caja</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="inventoryReport" class="nav-link">
+                <i class="fa fa-circle-o nav-icon"></i>
+                <p>Reporte de inventario</p>
+            </a>
+        </li>
+    </ul>
 </li>
-<!--Clientes-->
-
-<li class="nav-item has-treeview">
-    <a href="#" class="nav-link">
-       <img src="{{URL::asset('./img/icons/012-barter.png')}}" style="width: 30px; height: 30px; " alt="">
-        <i class="nav-icon fa fa-pie-chart"></i>
-        <p>
-            Clientes
-        </p>
-    </a>
-</li>
-<!--Tipos de productos-->
-
-<li class="nav-item has-treeview">
-    <a href="#" class="nav-link">
-       <img src="{{URL::asset('./img/icons/017-conveyor-belt.png')}}" style="width: 30px; height: 30px; " alt="">
-        <i class="nav-icon fa fa-pie-chart"></i>
-        <p>
-            Tipos de productos
-        </p>
-    </a>
-</li>
-<!--Paises de origen-->
-
-<li class="nav-item has-treeview">
-    <a href="#" class="nav-link">
-       <img src="{{URL::asset('./img/icons/014-placeholder.png')}}" style="width: 30px; height: 30px; " alt="">
-        <i class="nav-icon fa fa-pie-chart"></i>
-        <p>
-            Paises de origen
-        </p>
-    </a>
-</li>
 
 
-<li class="nav-item has-treeview">
-    <a href="#" class="nav-link">
-       <img src="{{URL::asset('./img/icons/025-delivery-truck.png')}}" style="width: 30px; height: 30px; " alt="">
-        <i class="nav-icon fa fa-pie-chart"></i>
-        <p>
-           Proveedores
-        </p>
-    </a>
-</li>
 <!--sALIR-->
 <li class="nav-item has-treeview">
     <a  href="{{ url('/logout') }}" class="nav-link">
        <img src="{{URL::asset('./img/icons/exit.png')}}"  style="width: 30px; height: 30px; " alt="">
         <i class="nav-icon fa fa-pie-chart" data-toggle="modal" data-target="#modal-warning"></i>
-        <p>
+        <p data-toggle="modal" data-target="#exampleModalCenter">
            Cerrar Sesion 
         </p>
     </a>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ¿Estas seguro que deseas salir de tu usuario?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Si</button>
+        <button type="button" class="btn btn-primary">No</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -254,13 +220,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
             
                 <!--Contenido principal-->
 
-          </div><!-- /.col -->
-          <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Starter Page</li>
-            </ol>
-          </div><!-- /.col -->
+          </div>
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
     </div>

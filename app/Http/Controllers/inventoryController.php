@@ -13,8 +13,7 @@ class inventoryController extends Controller
      */
     public function index()
     {
-        //
-        return 'Hola a todos';
+      
     }
 
     /**
@@ -24,7 +23,7 @@ class inventoryController extends Controller
      */
     public function create()
     {
-        //
+      
     }
 
     /**
@@ -35,7 +34,7 @@ class inventoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+     
     }
 
     /**
@@ -58,6 +57,7 @@ class inventoryController extends Controller
     public function edit($id)
     {
         //
+  
     }
 
     /**
